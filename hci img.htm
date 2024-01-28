@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" class="no-js">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<meta name="theme-color" content="#40477f"/>	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	        <script type="text/javascript">
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                var originalAddEventListener = EventTarget.prototype.addEventListener,
+                    oldWidth = window.innerWidth;
+
+                EventTarget.prototype.addEventListener = function (eventName, eventHandler, useCapture) {
+                    if (eventName === "resize") {
+                        originalAddEventListener.call(this, eventName, function (event) {
+                            if (oldWidth === window.innerWidth) {
+                                return;
+                            }
+                            else if (oldWidth !== window.innerWidth) {
+                                oldWidth = window.innerWidth;
+                            }
+                            if (eventHandler.handleEvent) {
+                                eventHandler.handleEvent.call(this, event);
+                            }
+                            else {
+                                eventHandler.call(this, event);
+                            };
+                        }, useCapture);
+                    }
+                    else {
+                        originalAddEventListener.call(this, eventName, eventHandler, useCapture);
+                    };
+                };
+            };
+        </script>
+		<title>Human-computer interaction &#8211; MOZAIKA</title>
+<link rel="alternate" hreflang="en" href="https://mozajka.co/human-computer-interaction/" />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="MOZAIKA &raquo; Feed" href="https://mozajka.co/feed/" />
+<link rel="alternate" type="application/rss+xml" title="MOZAIKA &raquo; Comments Feed" href="https://mozajka.co/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/mozajka.co\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='layerslider-css'  href='https://mozajka.co/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.8.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://mozajka.co/wp-includes/css/dist/block-library/style.min.css?ver=5.2.19' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://mozajka.co/wp-includes/css/dist/block-library/theme.min.css?ver=5.2.19' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://mozajka.co/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='easingslider-css'  href='https://mozajka.co/wp-content/plugins/easing-slider/assets/css/public.min.css?ver=3.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp_twitter_plugin_css-css'  href='https://mozajka.co/wp-content/plugins/recent-tweets-widget/tp_twitter_plugin.css?ver=1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://mozajka.co/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.8.3' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='dashicons-css'  href='https://mozajka.co/wp-includes/css/dashicons.min.css?ver=5.2.19' type='text/css' media='all' />
+<link rel='stylesheet' id='wpse_front_styles-css'  href='https://mozajka.co/wp-content/plugins/wp-smart-editor/css/front_styles.css?ver=5.2.19' type='text/css' media='all' />
+<link rel='stylesheet' id='wpse_custom_styles-css'  href='https://mozajka.co/wp-content/plugins/wp-smart-editor/css/customstyles/custom_styles.css?ver=5.2.19' type='text/css' media='all' />
+<link rel='stylesheet' id='wpse_qtip_css-css'  href='https://mozajka.co/wp-content/plugins/wp-smart-editor/css/jquery.qtip.css?ver=5.2.19' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-legacy-dropdown-click-0-css'  href='//mozajka.co/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/style.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='the7-Defaults-css'  href='https://mozajka.co/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=5.2.19' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://mozajka.co/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-web-fonts-css'  href='//fonts.googleapis.com/css?family=Roboto%3A400%2C500%2C600%2C700%7COpen+Sans%3A400%2C600%2C700%7CRoboto+Condensed%3A400%2C600%2C700&#038;ver=7.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-main-css'  href='https://mozajka.co/wp-content/themes/dt-the7/css/main.min.css?ver=7.7.1' type='text/css' media='all' />
+<style id='dt-main-inline-css' type='text/css'>
+body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .35s ease-out;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+#load {
+  background-color: #ffffff;
+}
+.uil-default rect:not(.bk) {
+  fill: #40477f;
+}
+.uil-ring > path {
+  fill: #40477f;
+}
+.ring-loader .circle {
+  fill: #40477f;
+}
+.ring-loader .moving-circle {
+  fill: #40477f;
+}
+.uil-hourglass .glass {
+  stroke: #40477f;
+}
+.uil-hourglass .sand {
+  fill: #40477f;
+}
+.spinner-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg width='75px' height='75px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid' class='uil-default'%3E%3Crect x='0' y='0' width='100' height='100' fill='none' class='bk'%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(0 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(30 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.08333333333333333s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(60 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.16666666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(90 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.25s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(120 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.3333333333333333s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(150 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.4166666666666667s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(180 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.5s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(210 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.5833333333333334s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(240 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.6666666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(270 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.75s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(300 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.8333333333333334s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%2340477f' transform='rotate(330 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.9166666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/svg%3E");
+}
+.ring-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='72' height='72' fill='%2340477f'%3E   %3Cpath opacity='.25' d='M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4'/%3E   %3Cpath d='M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z'%3E     %3CanimateTransform attributeName='transform' type='rotate' from='0 16 16' to='360 16 16' dur='0.8s' repeatCount='indefinite' /%3E   %3C/path%3E %3C/svg%3E");
+}
+.hourglass-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='72' height='72' fill='%2340477f'%3E   %3Cpath transform='translate(2)' d='M0 12 V20 H4 V12z'%3E      %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline'  /%3E   %3C/path%3E   %3Cpath transform='translate(8)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.2' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline'  /%3E   %3C/path%3E   %3Cpath transform='translate(14)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.4' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E   %3Cpath transform='translate(20)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.6' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E   %3Cpath transform='translate(26)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.8' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E %3C/svg%3E");
+}
+
+</style>
+<link rel='stylesheet' id='dt-awsome-fonts-back-css'  href='https://mozajka.co/wp-content/themes/dt-the7/fonts/FontAwesome/back-compat.min.css?ver=7.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-awsome-fonts-css'  href='https://mozajka.co/wp-content/themes/dt-the7/fonts/FontAwesome/css/all.min.css?ver=7.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-fontello-css'  href='https://mozajka.co/wp-content/themes/dt-the7/fonts/fontello/css/fontello.min.css?ver=7.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='the7pt-static-css'  href='https://mozajka.co/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=7.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-custom-css'  href='https://mozajka.co/wp-content/uploads/the7-css/custom.css?ver=512a882fced1' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-media-css'  href='https://mozajka.co/wp-content/uploads/the7-css/media.css?ver=512a882fced1' type='text/css' media='all' />
+<link rel='stylesheet' id='the7-mega-menu-css'  href='https://mozajka.co/wp-content/uploads/the7-css/mega-menu.css?ver=512a882fced1' type='text/css' media='all' />
+<link rel='stylesheet' id='the7-elements-albums-portfolio-css'  href='https://mozajka.co/wp-content/uploads/the7-css/the7-elements-albums-portfolio.css?ver=512a882fced1' type='text/css' media='all' />
+<link rel='stylesheet' id='the7-elements-css'  href='https://mozajka.co/wp-content/uploads/the7-css/post-type-dynamic.css?ver=512a882fced1' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://mozajka.co/wp-content/themes/dt-the7/style.css?ver=7.7.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://mozajka.co/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/sitepress-multilingual-cms/res/js/jquery.cookie.js?ver=4.2.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_cookies = {"_icl_current_language":{"value":"en","expires":1,"path":"\/"}};
+var wpml_cookies = {"_icl_current_language":{"value":"en","expires":1,"path":"\/"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=4.2.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LS_Meta = {"v":"6.8.4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/LayerSlider/static/layerslider/js/greensock.js?ver=1.19.0'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=6.8.4'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.transitions.js?ver=6.8.4'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/easing-slider/assets/js/public.min.js?ver=3.0.8'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8.3'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8.3'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/wp-smart-editor/js/jquery.qtip.min.js?ver=5.2.19'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/wp-smart-editor/js/frontend_tooltip.js?ver=5.2.19'></script>
+<script type='text/javascript' src='//mozajka.co/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/script.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var dtLocal = {"themeUrl":"https:\/\/mozajka.co\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"532","ajaxurl":"https:\/\/mozajka.co\/wp-admin\/admin-ajax.php","contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy."},"ajaxNonce":"7cf3f1e5bb","pageData":"","themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#40477f"},"desktopHeader":{"height":100},"floatingHeader":{"showAfter":140,"showMenu":true,"height":70,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"https:\/\/mozajka.co\/wp-content\/uploads\/2019\/08\/Mozaika_logo_floating_navigation-e1566323726343.png\" srcset=\"https:\/\/mozajka.co\/wp-content\/uploads\/2019\/08\/Mozaika_logo_floating_navigation-e1566323726343.png 69w, https:\/\/mozajka.co\/wp-content\/uploads\/2019\/08\/Mozaika_logo_high_dp_floating_navigation-e1566323875975.png 124w\" width=\"69\" height=\"50\"   sizes=\"69px\" alt=\"MOZAIKA\" \/>","url":"https:\/\/mozajka.co\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":990,"secondSwitchPoint":700,"firstSwitchPointHeight":60,"secondSwitchPointHeight":60},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"https:\/\/mozajka.co\/wp-content\/uploads\/2019\/08\/Mozaika_logo-e1566323397787.png\" srcset=\"https:\/\/mozajka.co\/wp-content\/uploads\/2019\/08\/Mozaika_logo-e1566323397787.png 107w, https:\/\/mozajka.co\/wp-content\/uploads\/2019\/08\/Mozaika_logo_high_dp-e1566323509679.png 115w\" width=\"107\" height=\"78\"   sizes=\"107px\" alt=\"MOZAIKA\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"https:\/\/mozajka.co\/wp-content\/uploads\/2019\/08\/Mozaika_logo-e1566323397787.png\" srcset=\"https:\/\/mozajka.co\/wp-content\/uploads\/2019\/08\/Mozaika_logo-e1566323397787.png 107w, https:\/\/mozajka.co\/wp-content\/uploads\/2019\/08\/Mozaika_logo_high_dp-e1566323509679.png 115w\" width=\"107\" height=\"78\"   sizes=\"107px\" alt=\"MOZAIKA\" \/>"}},"content":{"textColor":"#85868c","headerColor":"#333333"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
+var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp","google":"Share on Google Plus"},"overlayOpacity":"85"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/themes/dt-the7/js/above-the-fold.min.js?ver=7.7.1'></script>
+<meta name="generator" content="Powered by LayerSlider 6.8.4 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+<!-- LayerSlider updates and docs at: https://layerslider.kreaturamedia.com -->
+<link rel='https://api.w.org/' href='https://mozajka.co/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mozajka.co/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://mozajka.co/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Content mapping' href='https://mozajka.co/content-mapping/' />
+<link rel='next' title='AI' href='https://mozajka.co/ai/' />
+
+<link rel="canonical" href="https://mozajka.co/human-computer-interaction/" />
+<link rel='shortlink' href='https://mozajka.co/?p=532' />
+<link rel="alternate" type="application/json+oembed" href="https://mozajka.co/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmozajka.co%2Fhuman-computer-interaction%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://mozajka.co/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmozajka.co%2Fhuman-computer-interaction%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.2.6 stt:7,1;" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-20991700-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-20991700-2');
+</script><meta property="og:site_name" content="MOZAIKA" />
+<meta property="og:title" content="Human-computer interaction" />
+<meta property="og:image" content="https://mozajka.co/wp-content/uploads/2019/09/HUMAN-COMPUTER-INTERACTION.jpg" />
+<meta property="og:url" content="https://mozajka.co/human-computer-interaction/" />
+<meta property="og:type" content="article" />
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://mozajka.co/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.4.8.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) { 
+	var load = document.getElementById("load");
+	
+	if(!load.classList.contains('loader-removed')){
+		var removeLoading = setTimeout(function() {
+			load.className += " loader-removed";
+		}, 300);
+	}
+});
+</script>
+<link rel="icon" href="https://mozajka.co/wp-content/uploads/2019/08/Mozaika_logo_floating_navigation-e1566323726343.png" type="image/png" sizes="16x16"/><script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body class="post-template-default single single-post postid-532 single-format-standard wp-embed-responsive the7-core-ver-2.0.4 no-comments dt-responsive-on srcset-enabled btn-flat custom-btn-color custom-btn-hover-color phantom-sticky phantom-shadow-decoration phantom-custom-logo-on floating-top-bar sticky-mobile-header top-header first-switch-logo-left first-switch-menu-right second-switch-logo-center second-switch-menu-right right-mobile-menu layzr-loading-on popup-message-style dt-fa-compatibility the7-ver-7.7.1 wpb-js-composer js-comp-ver-5.7 vc_responsive">
+<!-- The7 7.7.1 -->
+<div id="load" class="ring-loader">
+	<div class="load-wrap"></div>
+</div>
+<div id="page" >
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+<div class="masthead inline-header right widgets full-height shadow-decoration small-mobile-menu-icon mobile-menu-icon-bg-on dt-parent-menu-clickable"  role="banner">
+
+	<div class="top-bar full-width-line top-bar-line-hide">
+	<div class="top-bar-bg" ></div>
+	<div class="left-widgets mini-widgets"><span class="mini-contacts phone show-on-desktop in-top-bar-left in-menu-second-switch"><i class=" Defaults-phone"></i>(00359) 885796530 / 888186317</span><span class="mini-contacts address show-on-desktop in-top-bar-left in-menu-second-switch"><i class=" the7-mw-icon-address-bold"></i>Solunska 52, Sofia 1000, Bulgaria</span><a href="https://mozajka.co/contact/" class="microwidget-btn mini-button header-elements-button-2 show-on-desktop near-logo-first-switch in-menu-second-switch anchor-link microwidget-btn-bg-on microwidget-btn-hover-bg-on disable-animation-bg border-on hover-border-on btn-icon-align-right" ><span>CONTACT</span><i class="Defaults-envelope-o"></i></a></div><div class="right-widgets mini-widgets"><div class="soc-ico show-on-desktop in-top-bar-right in-menu-second-switch custom-bg disabled-border border-off hover-accent-bg hover-disabled-border  hover-border-off"><a title="Facebook" href="/" target="_blank" class="facebook"><span class="soc-font-icon"></span><span class="screen-reader-text">Facebook</span></a><a title="Twitter" href="/" target="_blank" class="twitter"><span class="soc-font-icon"></span><span class="screen-reader-text">Twitter</span></a><a title="Dribbble" href="/" target="_blank" class="dribbble"><span class="soc-font-icon"></span><span class="screen-reader-text">Dribbble</span></a></div><div class="mini-wpml show-on-desktop in-top-bar-right in-menu-second-switch">
+<div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-dropdown-click js-wpml-ls-legacy-dropdown-click">
+	<ul>
+
+		<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-dropdown-click">
+
+			<a href="#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle"><img class="wpml-ls-flag" src="https://mozajka.co/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt="en" title="English"><span class="wpml-ls-native">English</span></a>
+
+			<ul class="js-wpml-ls-sub-menu wpml-ls-sub-menu">
+				
+					<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-bg wpml-ls-last-item">
+						<a href="https://mozajka.co/?lang=bg" class="wpml-ls-link"><img class="wpml-ls-flag" src="https://mozajka.co/wp-content/plugins/sitepress-multilingual-cms/res/flags/bg.png" alt="bg" title="Български"><span class="wpml-ls-native">Български</span></a>
+					</li>
+
+							</ul>
+
+		</li>
+
+	</ul>
+</div></div></div></div>
+
+	<header class="header-bar">
+
+		<div class="branding">
+	<div id="site-title" class="assistive-text">MOZAIKA</div>
+	<div id="site-description" class="assistive-text">Mozaika is an SME and a Research Center providing research and solutions in the field of data science</div>
+	<a class="" href="https://mozajka.co/"><img class=" preload-me" src="https://mozajka.co/wp-content/uploads/2019/08/Mozaika_logo-e1566323397787.png" srcset="https://mozajka.co/wp-content/uploads/2019/08/Mozaika_logo-e1566323397787.png 107w, https://mozajka.co/wp-content/uploads/2019/08/Mozaika_logo_high_dp-e1566323509679.png 115w" width="107" height="78"   sizes="107px" alt="MOZAIKA" /></a></div>
+
+		<ul id="primary-menu" class="main-nav underline-decoration upwards-line level-arrows-on outside-item-remove-margin" role="navigation"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-39 first"><a href='https://mozajka.co/' data-level='1'><span class="menu-item-text"><span class="menu-text">HOME</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-319 has-children"><a href='https://mozajka.co/about-us/' data-level='1'><span class="menu-item-text"><span class="menu-text">ABOUT US</span></span></a><ul class="sub-nav level-arrows-on"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197 first"><a href='https://mozajka.co/about-us/' data-level='2'><span class="menu-item-text"><span class="menu-text">About us</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-939"><a href='https://mozajka.co/history/' data-level='2'><span class="menu-item-text"><span class="menu-text">History</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href='https://mozajka.co/teams/' data-level='2'><span class="menu-item-text"><span class="menu-text">Team</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href='https://mozajka.co/partners/' data-level='2'><span class="menu-item-text"><span class="menu-text">Partners</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-424"><a href='https://mozajka.co/clients/' data-level='2'><span class="menu-item-text"><span class="menu-text">Clients</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href='https://mozajka.co/testimonials/' data-level='2'><span class="menu-item-text"><span class="menu-text">Testimonials</span></span></a></li> </ul></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-159 has-children"><a href='https://mozajka.co/services/' data-level='1'><span class="menu-item-text"><span class="menu-text">SERVICES</span></span></a><ul class="sub-nav level-arrows-on"><li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-528 first"><a href='https://mozajka.co/business-information-delivery/' data-level='2'><span class="menu-item-text"><span class="menu-text">Business information delivery</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-527"><a href='https://mozajka.co/information-services/' data-level='2'><span class="menu-item-text"><span class="menu-text">Information services</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-526"><a href='https://mozajka.co/daas/' data-level='2'><span class="menu-item-text"><span class="menu-text">DaaS</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-525"><a href='https://mozajka.co/iaas/' data-level='2'><span class="menu-item-text"><span class="menu-text">IaaS</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-529"><a href='https://mozajka.co/research-developement/' data-level='2'><span class="menu-item-text"><span class="menu-text">R&#038;D</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-524"><a href='https://mozajka.co/project-development/' data-level='2'><span class="menu-item-text"><span class="menu-text">Project development</span></span></a></li> </ul></li> <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-472 act has-children"><a href='https://mozajka.co/solutions/' data-level='1'><span class="menu-item-text"><span class="menu-text">SOLUTIONS</span></span></a><ul class="sub-nav level-arrows-on"><li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-549 first"><a href='https://mozajka.co/information-infrastructures/' data-level='2'><span class="menu-item-text"><span class="menu-text">Information infrastructures</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-548"><a href='https://mozajka.co/content-management/' data-level='2'><span class="menu-item-text"><span class="menu-text">Content management systems</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-935"><a href='https://mozajka.co/water-resources-management/' data-level='2'><span class="menu-item-text"><span class="menu-text">Water resources management</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-546 act"><a href='https://mozajka.co/human-computer-interaction/' data-level='2'><span class="menu-item-text"><span class="menu-text">Human-computer interaction</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-547"><a href='https://mozajka.co/content-mapping/' data-level='2'><span class="menu-item-text"><span class="menu-text">Content mapping</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-936"><a href='https://mozajka.co/publishing-mozaika/' data-level='2'><span class="menu-item-text"><span class="menu-text">Publishing</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-545"><a href='https://mozajka.co/ai/' data-level='2'><span class="menu-item-text"><span class="menu-text">AI</span></span></a></li> </ul></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643"><a href='https://mozajka.co/insights/' data-level='1'><span class="menu-item-text"><span class="menu-text">INSIGHTS</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-559 has-children"><a href='https://mozajka.co/rd/' data-level='1'><span class="menu-item-text"><span class="menu-text">R&#038;D</span></span></a><ul class="sub-nav level-arrows-on"><li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-550 first"><a href='https://mozajka.co/research-developement/' data-level='2'><span class="menu-item-text"><span class="menu-text">Expertise</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-555"><a href='https://mozajka.co/publications/' data-level='2'><span class="menu-item-text"><span class="menu-text">Publications</span></span></a></li> </ul></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-430"><a href='https://mozajka.co/in-media/' data-level='1'><span class="menu-item-text"><span class="menu-text">IN MEDIA</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-646"><a href='https://mozajka.co/news/' data-level='1'><span class="menu-item-text"><span class="menu-text">NEWS</span></span></a></li> </ul>
+		<div class="mini-widgets"><div class="mini-search show-on-desktop near-logo-first-switch in-top-bar popup-search custom-icon"><form class="searchform mini-widget-searchform" role="search" method="get" action="https://mozajka.co/">
+
+	<label for="the7-micro-widget-search" class="screen-reader-text">Search:</label>
+			<a href="#go" class="submit"><i class=" mw-icon fas fa-search"></i><span>Search</span></a>
+		<div class="popup-search-wrap">
+			<input type="text" id="the7-micro-widget-search" class="field searchform-s" name="s" value="" placeholder="Type and hit enter …"/>
+
+			<a href="#go" class="search-icon"><i class="fas fa-search"></i></a>
+		</div>
+	<input type="hidden" name="lang" value="en"/>		<input type="submit" class="assistive-text searchsubmit" value="Go!"/>
+</form>
+</div></div>
+	</header>
+
+</div>
+<div class='dt-close-mobile-menu-icon'><span></span></div>
+<div class='dt-mobile-header'>
+	<ul id="mobile-menu" class="mobile-main-nav" role="navigation">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-39 first"><a href='https://mozajka.co/' data-level='1'><span class="menu-item-text"><span class="menu-text">HOME</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-319 has-children"><a href='https://mozajka.co/about-us/' data-level='1'><span class="menu-item-text"><span class="menu-text">ABOUT US</span></span></a><ul class="sub-nav level-arrows-on"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197 first"><a href='https://mozajka.co/about-us/' data-level='2'><span class="menu-item-text"><span class="menu-text">About us</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-939"><a href='https://mozajka.co/history/' data-level='2'><span class="menu-item-text"><span class="menu-text">History</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href='https://mozajka.co/teams/' data-level='2'><span class="menu-item-text"><span class="menu-text">Team</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href='https://mozajka.co/partners/' data-level='2'><span class="menu-item-text"><span class="menu-text">Partners</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-424"><a href='https://mozajka.co/clients/' data-level='2'><span class="menu-item-text"><span class="menu-text">Clients</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href='https://mozajka.co/testimonials/' data-level='2'><span class="menu-item-text"><span class="menu-text">Testimonials</span></span></a></li> </ul></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-159 has-children"><a href='https://mozajka.co/services/' data-level='1'><span class="menu-item-text"><span class="menu-text">SERVICES</span></span></a><ul class="sub-nav level-arrows-on"><li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-528 first"><a href='https://mozajka.co/business-information-delivery/' data-level='2'><span class="menu-item-text"><span class="menu-text">Business information delivery</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-527"><a href='https://mozajka.co/information-services/' data-level='2'><span class="menu-item-text"><span class="menu-text">Information services</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-526"><a href='https://mozajka.co/daas/' data-level='2'><span class="menu-item-text"><span class="menu-text">DaaS</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-525"><a href='https://mozajka.co/iaas/' data-level='2'><span class="menu-item-text"><span class="menu-text">IaaS</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-529"><a href='https://mozajka.co/research-developement/' data-level='2'><span class="menu-item-text"><span class="menu-text">R&#038;D</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-524"><a href='https://mozajka.co/project-development/' data-level='2'><span class="menu-item-text"><span class="menu-text">Project development</span></span></a></li> </ul></li> <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-472 act has-children"><a href='https://mozajka.co/solutions/' data-level='1'><span class="menu-item-text"><span class="menu-text">SOLUTIONS</span></span></a><ul class="sub-nav level-arrows-on"><li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-549 first"><a href='https://mozajka.co/information-infrastructures/' data-level='2'><span class="menu-item-text"><span class="menu-text">Information infrastructures</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-548"><a href='https://mozajka.co/content-management/' data-level='2'><span class="menu-item-text"><span class="menu-text">Content management systems</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-935"><a href='https://mozajka.co/water-resources-management/' data-level='2'><span class="menu-item-text"><span class="menu-text">Water resources management</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-546 act"><a href='https://mozajka.co/human-computer-interaction/' data-level='2'><span class="menu-item-text"><span class="menu-text">Human-computer interaction</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-547"><a href='https://mozajka.co/content-mapping/' data-level='2'><span class="menu-item-text"><span class="menu-text">Content mapping</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-936"><a href='https://mozajka.co/publishing-mozaika/' data-level='2'><span class="menu-item-text"><span class="menu-text">Publishing</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-545"><a href='https://mozajka.co/ai/' data-level='2'><span class="menu-item-text"><span class="menu-text">AI</span></span></a></li> </ul></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643"><a href='https://mozajka.co/insights/' data-level='1'><span class="menu-item-text"><span class="menu-text">INSIGHTS</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-559 has-children"><a href='https://mozajka.co/rd/' data-level='1'><span class="menu-item-text"><span class="menu-text">R&#038;D</span></span></a><ul class="sub-nav level-arrows-on"><li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-550 first"><a href='https://mozajka.co/research-developement/' data-level='2'><span class="menu-item-text"><span class="menu-text">Expertise</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-555"><a href='https://mozajka.co/publications/' data-level='2'><span class="menu-item-text"><span class="menu-text">Publications</span></span></a></li> </ul></li> <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-430"><a href='https://mozajka.co/in-media/' data-level='1'><span class="menu-item-text"><span class="menu-text">IN MEDIA</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-646"><a href='https://mozajka.co/news/' data-level='1'><span class="menu-item-text"><span class="menu-text">NEWS</span></span></a></li> 	</ul>
+	<div class='mobile-mini-widgets-in-menu'></div>
+</div>
+
+
+		<div class="page-title title-left solid-bg breadcrumbs-mobile-off page-title-responsive-enabled">
+			<div class="wf-wrap">
+
+				<div class="page-title-head hgroup"><h1 class="entry-title">Human-computer interaction</h1></div><div class="page-title-breadcrumbs"><div class="assistive-text">You are here:</div><ol class="breadcrumbs text-small" xmlns:v="http://rdf.data-vocabulary.org/#"><li typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://mozajka.co/" title="">Home</a></li><li typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://mozajka.co/category/solutions/">Solutions</a></li><li class="current">Human-computer interaction</li></ol></div>			</div>
+		</div>
+
+		
+
+<div id="main" class="sidebar-right sidebar-divider-off"  >
+
+	
+	<div class="main-gradient"></div>
+	<div class="wf-wrap">
+	<div class="wf-container-main">
+
+	
+
+			<div id="content" class="content" role="main">
+
+				
+<article id="post-532" class="post-532 post type-post status-publish format-standard has-post-thumbnail category-solutions tag-business tag-business-solutions tag-solutions category-34 description-off">
+
+	<div class="post-thumbnail"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%201000%20500&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2019/09/HUMAN-COMPUTER-INTERACTION-1000x500.jpg" data-srcset="https://mozajka.co/wp-content/uploads/2019/09/HUMAN-COMPUTER-INTERACTION-1000x500.jpg 1000w" width="1000" height="500"  title="Human-Computer Interaction" alt="Human-Computer Interaction" /></div><div class="entry-content"><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<p style="text-align: justify;">Mozaika has expertise in different facets of human-computer interaction with natural language processing, such as</p>
+<ul>
+<li style="text-align: justify;">natural langauge to ontology interoperability;</li>
+<li style="text-align: justify;">natural language understanding;</li>
+<li style="text-align: justify;">dialogue systems and modelling;</li>
+<li style="text-align: justify;">speech-enabled interaction;</li>
+<li style="text-align: justify;">voice biometrics.</li>
+</ul>
+<p>&nbsp;</p>
+<p style="text-align: justify;">For more information write to: <a href="mailto:contact@mozajka.co" target="_blank" rel="noopener noreferrer">contact@mozajka.co</a></p>
+
+		</div>
+	</div>
+</div></div></div></div>
+</div><div class="post-meta wf-mobile-collapsed"><div class="entry-tags">Tags:&nbsp;<a href="https://mozajka.co/tag/business/" rel="tag">Business</a><a href="https://mozajka.co/tag/business-solutions/" rel="tag">Business Solutions</a><a href="https://mozajka.co/tag/solutions/" rel="tag">solutions</a></div></div><div class="single-share-box"><div class="share-link-description">Share this post</div><div class="share-buttons"><a class="facebook" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmozajka.co%2Fhuman-computer-interaction%2F&#038;t=Human-computer+interaction" title="Facebook" target="_blank"><span class="soc-font-icon"></span><span class="screen-reader-text">Share with Facebook</span></a><a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fmozajka.co%2Fhuman-computer-interaction%2F&#038;title=Human-computer%20interaction&#038;summary=&#038;source=MOZAIKA" title="LinkedIn" target="_blank"><span class="soc-font-icon"></span><span class="screen-reader-text">Share with LinkedIn</span></a><a class="twitter" href="https://twitter.com/share?url=https%3A%2F%2Fmozajka.co%2Fhuman-computer-interaction%2F&#038;text=Human-computer+interaction" title="Twitter" target="_blank"><span class="soc-font-icon"></span><span class="screen-reader-text">Share with Twitter</span></a><a class="pinterest pinit-marklet" href="//pinterest.com/pin/create/button/" title="Pinterest" target="_blank" data-pin-config="above" data-pin-do="buttonBookmark"><span class="soc-font-icon"></span><span class="screen-reader-text">Share with Pinterest</span></a></div></div><nav class="navigation post-navigation" role="navigation"><h2 class="screen-reader-text">Post navigation</h2><div class="nav-links"><a class="nav-previous" href="https://mozajka.co/content-mapping/" rel="prev"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="meta-nav" aria-hidden="true">Previous</span><span class="screen-reader-text">Previous post:</span><span class="post-title h4-size">Content mapping</span></a><a class="nav-next" href="https://mozajka.co/ai/" rel="next"><i class="fa fa-angle-right" aria-hidden="true"></i><span class="meta-nav" aria-hidden="true">Next</span><span class="screen-reader-text">Next post:</span><span class="post-title h4-size">AI</span></a></div></nav><div class="single-related-posts"><h3>From the Same Category</h3><section class="items-grid"><div class=" related-item"><article class="post-format-standard"><div class="mini-post-img"><a class="alignleft post-rollover layzr-bg" href="https://mozajka.co/history/" aria-label="Post image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20110%2080&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2019/11/History-110x80.png" data-srcset="https://mozajka.co/wp-content/uploads/2019/11/History-110x80.png 110w, https://mozajka.co/wp-content/uploads/2019/11/History-220x160.png 220w" width="110" height="80"  alt="History" /></a></div><div class="post-content"><a href="https://mozajka.co/history/">History</a><br /><time class="text-secondary" datetime="2019-11-02T11:02:30+03:00">November 2, 2019</time></div></article></div><div class=" related-item"><article class="post-format-standard"><div class="mini-post-img"><a class="alignleft post-rollover layzr-bg" href="https://mozajka.co/publishing-mozaika/" aria-label="Post image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20110%2080&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2019/08/Publishing-110x80.jpg" data-srcset="https://mozajka.co/wp-content/uploads/2019/08/Publishing-110x80.jpg 110w, https://mozajka.co/wp-content/uploads/2019/08/Publishing-220x160.jpg 220w" width="110" height="80"  alt="Publishing" /></a></div><div class="post-content"><a href="https://mozajka.co/publishing-mozaika/">Publishing</a><br /><time class="text-secondary" datetime="2019-11-02T10:45:31+03:00">November 2, 2019</time></div></article></div><div class=" related-item"><article class="post-format-standard"><div class="mini-post-img"><a class="alignleft post-rollover layzr-bg" href="https://mozajka.co/water-resources-management/" aria-label="Post image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20110%2080&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2019/11/Water-Resources-Management--110x80.jpg" data-srcset="https://mozajka.co/wp-content/uploads/2019/11/Water-Resources-Management--110x80.jpg 110w, https://mozajka.co/wp-content/uploads/2019/11/Water-Resources-Management--220x160.jpg 220w" width="110" height="80"  alt="Water Resources Management" /></a></div><div class="post-content"><a href="https://mozajka.co/water-resources-management/">Water resources management</a><br /><time class="text-secondary" datetime="2019-11-02T10:38:50+03:00">November 2, 2019</time></div></article></div><div class=" related-item"><article class="post-format-standard"><div class="mini-post-img"><a class="alignleft post-rollover layzr-bg" href="https://mozajka.co/data-as-a-service/" aria-label="Post image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20110%2080&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2019/08/Data-as-a-service-110x80.jpg" data-srcset="https://mozajka.co/wp-content/uploads/2019/08/Data-as-a-service-110x80.jpg 110w, https://mozajka.co/wp-content/uploads/2019/08/Data-as-a-service-220x160.jpg 220w" width="110" height="80"  alt="Data as a service" /></a></div><div class="post-content"><a href="https://mozajka.co/data-as-a-service/">DaaS (Data as a service) offerings</a><br /><time class="text-secondary" datetime="2019-09-30T18:31:49+03:00">September 30, 2019</time></div></article></div><div class=" related-item"><article class="post-format-standard"><div class="mini-post-img"><a class="alignleft post-rollover layzr-bg" href="https://mozajka.co/knowledge-intense-solutions-2/" aria-label="Post image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20110%2080&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2019/08/Business-solutions-110x80.jpg" data-srcset="https://mozajka.co/wp-content/uploads/2019/08/Business-solutions-110x80.jpg 110w, https://mozajka.co/wp-content/uploads/2019/08/Business-solutions-220x160.jpg 220w" width="110" height="80"  alt="Business solutions" /></a></div><div class="post-content"><a href="https://mozajka.co/knowledge-intense-solutions-2/">Knowledge intense solutions</a><br /><time class="text-secondary" datetime="2019-09-30T18:31:16+03:00">September 30, 2019</time></div></article></div><div class=" related-item"><article class="post-format-standard"><div class="mini-post-img"><a class="alignleft post-rollover layzr-bg" href="https://mozajka.co/publishing/" aria-label="Post image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20110%2080&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2019/08/Publishing-110x80.jpg" data-srcset="https://mozajka.co/wp-content/uploads/2019/08/Publishing-110x80.jpg 110w, https://mozajka.co/wp-content/uploads/2019/08/Publishing-220x160.jpg 220w" width="110" height="80"  alt="Publishing" /></a></div><div class="post-content"><a href="https://mozajka.co/publishing/">Publishing</a><br /><time class="text-secondary" datetime="2019-09-30T18:28:26+03:00">September 30, 2019</time></div></article></div></section></div>
+</article>
+
+			</div><!-- #content -->
+
+			
+	<aside id="sidebar" class="sidebar bg-under-widget">
+		<div class="sidebar-content widget-divider-off">
+			<section id="presscore-blog-posts-2" class="widget widget_presscore-blog-posts"><div class="widget-title">Recent News</div><ul class="recent-posts"><li><article class="post-format-standard"><div class="mini-post-img"><a class="alignleft post-rollover layzr-bg" href="https://mozajka.co/mozaika-at-un-world-space-forum-2023/" aria-label="Post image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%2060%2060&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2023/12/IMG_7839-60x60.jpg" data-srcset="https://mozajka.co/wp-content/uploads/2023/12/IMG_7839-60x60.jpg 60w, https://mozajka.co/wp-content/uploads/2023/12/IMG_7839-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div><div class="post-content"><a href="https://mozajka.co/mozaika-at-un-world-space-forum-2023/">Mozaika at UN World Space  Forum 2023</a><br /><time class="text-secondary" datetime="2023-12-15T13:57:54+03:00">December 15, 2023</time></div></article></li><li><article class="post-format-standard"><div class="mini-post-img"><a class="alignleft post-rollover layzr-bg" href="https://mozajka.co/mozaika-participates-at-danube-ports-days-2023/" aria-label="Post image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%2060%2060&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2023/11/IMG_7650-60x60.jpg" data-srcset="https://mozajka.co/wp-content/uploads/2023/11/IMG_7650-60x60.jpg 60w, https://mozajka.co/wp-content/uploads/2023/11/IMG_7650-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div><div class="post-content"><a href="https://mozajka.co/mozaika-participates-at-danube-ports-days-2023/">Mozaika participates in Danube Ports Days 2023</a><br /><time class="text-secondary" datetime="2023-11-26T13:26:39+03:00">November 26, 2023</time></div></article></li><li><article class="post-format-standard"><div class="mini-post-img"><a class="alignleft post-rollover layzr-bg" href="https://mozajka.co/mozaika-t-2nd-destinatione-user-exchange/" aria-label="Post image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%2060%2060&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2023/11/DestinEeXchange2-60x60.jpg" data-srcset="https://mozajka.co/wp-content/uploads/2023/11/DestinEeXchange2-60x60.jpg 60w, https://mozajka.co/wp-content/uploads/2023/11/DestinEeXchange2-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div><div class="post-content"><a href="https://mozajka.co/mozaika-t-2nd-destinatione-user-exchange/">Mozaika at the 2nd DestinationE User eXchange Seminar</a><br /><time class="text-secondary" datetime="2023-11-14T18:10:36+03:00">November 14, 2023</time></div></article></li><li><article class="post-format-standard"><div class="mini-post-img"><a class="alignleft post-rollover layzr-bg" href="https://mozajka.co/mozaika-sponsor-at-bids-2023/" aria-label="Post image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%2060%2060&#39;%2F%3E" data-src="https://mozajka.co/wp-content/uploads/2023/11/IMG_7483-60x60.jpg" data-srcset="https://mozajka.co/wp-content/uploads/2023/11/IMG_7483-60x60.jpg 60w, https://mozajka.co/wp-content/uploads/2023/11/IMG_7483-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div><div class="post-content"><a href="https://mozajka.co/mozaika-sponsor-at-bids-2023/">Mozaika sponsor at BiDS 2023</a><br /><time class="text-secondary" datetime="2023-11-10T17:06:26+03:00">November 10, 2023</time></div></article></li></ul></section><section id="tag_cloud-2" class="widget widget_tag_cloud"><div class="widget-title">Tags</div><div class="tagcloud"><a href="https://mozajka.co/tag/ai/" class="tag-cloud-link tag-link-46 tag-link-position-1" style="font-size: 9.48235294118pt;" aria-label="AI (2 items)">AI</a>
+<a href="https://mozajka.co/tag/bids/" class="tag-cloud-link tag-link-51 tag-link-position-2" style="font-size: 8pt;" aria-label="BiDS (1 item)">BiDS</a>
+<a href="https://mozajka.co/tag/big-data-from-space/" class="tag-cloud-link tag-link-52 tag-link-position-3" style="font-size: 8pt;" aria-label="Big Data from Space (1 item)">Big Data from Space</a>
+<a href="https://mozajka.co/tag/business/" class="tag-cloud-link tag-link-24 tag-link-position-4" style="font-size: 15.2470588235pt;" aria-label="Business (14 items)">Business</a>
+<a href="https://mozajka.co/tag/business-solutions/" class="tag-cloud-link tag-link-23 tag-link-position-5" style="font-size: 15.2470588235pt;" aria-label="Business Solutions (14 items)">Business Solutions</a>
+<a href="https://mozajka.co/tag/cms/" class="tag-cloud-link tag-link-40 tag-link-position-6" style="font-size: 8pt;" aria-label="CMS (1 item)">CMS</a>
+<a href="https://mozajka.co/tag/content-management/" class="tag-cloud-link tag-link-41 tag-link-position-7" style="font-size: 8pt;" aria-label="Content Management (1 item)">Content Management</a>
+<a href="https://mozajka.co/tag/content-mapping/" class="tag-cloud-link tag-link-42 tag-link-position-8" style="font-size: 8pt;" aria-label="Content Mapping (1 item)">Content Mapping</a>
+<a href="https://mozajka.co/tag/daas/" class="tag-cloud-link tag-link-35 tag-link-position-9" style="font-size: 9.48235294118pt;" aria-label="daas (2 items)">daas</a>
+<a href="https://mozajka.co/tag/deep-learning/" class="tag-cloud-link tag-link-54 tag-link-position-10" style="font-size: 8pt;" aria-label="Deep learning (1 item)">Deep learning</a>
+<a href="https://mozajka.co/tag/developement/" class="tag-cloud-link tag-link-30 tag-link-position-11" style="font-size: 9.48235294118pt;" aria-label="Developement (2 items)">Developement</a>
+<a href="https://mozajka.co/tag/eo4ai/" class="tag-cloud-link tag-link-57 tag-link-position-12" style="font-size: 8pt;" aria-label="EO4AI (1 item)">EO4AI</a>
+<a href="https://mozajka.co/tag/esa/" class="tag-cloud-link tag-link-47 tag-link-position-13" style="font-size: 8pt;" aria-label="ESA (1 item)">ESA</a>
+<a href="https://mozajka.co/tag/iaas/" class="tag-cloud-link tag-link-37 tag-link-position-14" style="font-size: 8pt;" aria-label="IaaS (1 item)">IaaS</a>
+<a href="https://mozajka.co/tag/information/" class="tag-cloud-link tag-link-36 tag-link-position-15" style="font-size: 8pt;" aria-label="information (1 item)">information</a>
+<a href="https://mozajka.co/tag/information-infrastructure/" class="tag-cloud-link tag-link-50 tag-link-position-16" style="font-size: 8pt;" aria-label="Information infrastructure (1 item)">Information infrastructure</a>
+<a href="https://mozajka.co/tag/in-media/" class="tag-cloud-link tag-link-26 tag-link-position-17" style="font-size: 8pt;" aria-label="In Media (1 item)">In Media</a>
+<a href="https://mozajka.co/tag/intense-solutions/" class="tag-cloud-link tag-link-21 tag-link-position-18" style="font-size: 8pt;" aria-label="Intense solutions (1 item)">Intense solutions</a>
+<a href="https://mozajka.co/tag/knowledge/" class="tag-cloud-link tag-link-20 tag-link-position-19" style="font-size: 8pt;" aria-label="Knowledge (1 item)">Knowledge</a>
+<a href="https://mozajka.co/tag/knowledge-intense-solutions/" class="tag-cloud-link tag-link-19 tag-link-position-20" style="font-size: 8pt;" aria-label="Knowledge intense solutions (1 item)">Knowledge intense solutions</a>
+<a href="https://mozajka.co/tag/linked-data/" class="tag-cloud-link tag-link-53 tag-link-position-21" style="font-size: 8pt;" aria-label="Linked data (1 item)">Linked data</a>
+<a href="https://mozajka.co/tag/mapping/" class="tag-cloud-link tag-link-43 tag-link-position-22" style="font-size: 8pt;" aria-label="Mapping (1 item)">Mapping</a>
+<a href="https://mozajka.co/tag/media/" class="tag-cloud-link tag-link-25 tag-link-position-23" style="font-size: 8pt;" aria-label="Media (1 item)">Media</a>
+<a href="https://mozajka.co/tag/news/" class="tag-cloud-link tag-link-8 tag-link-position-24" style="font-size: 22pt;" aria-label="News (100 items)">News</a>
+<a href="https://mozajka.co/tag/project/" class="tag-cloud-link tag-link-38 tag-link-position-25" style="font-size: 8pt;" aria-label="Project (1 item)">Project</a>
+<a href="https://mozajka.co/tag/project-development/" class="tag-cloud-link tag-link-39 tag-link-position-26" style="font-size: 8pt;" aria-label="Project development (1 item)">Project development</a>
+<a href="https://mozajka.co/tag/publications/" class="tag-cloud-link tag-link-44 tag-link-position-27" style="font-size: 8pt;" aria-label="Publications (1 item)">Publications</a>
+<a href="https://mozajka.co/tag/rr/" class="tag-cloud-link tag-link-33 tag-link-position-28" style="font-size: 9.48235294118pt;" aria-label="R&amp;R (2 items)">R&amp;R</a>
+<a href="https://mozajka.co/tag/research/" class="tag-cloud-link tag-link-29 tag-link-position-29" style="font-size: 9.48235294118pt;" aria-label="Research (2 items)">Research</a>
+<a href="https://mozajka.co/tag/rsearch-and-development/" class="tag-cloud-link tag-link-32 tag-link-position-30" style="font-size: 9.48235294118pt;" aria-label="Rsearch and Development (2 items)">Rsearch and Development</a>
+<a href="https://mozajka.co/tag/satellite-data/" class="tag-cloud-link tag-link-49 tag-link-position-31" style="font-size: 9.48235294118pt;" aria-label="Satellite data (2 items)">Satellite data</a>
+<a href="https://mozajka.co/tag/sediments/" class="tag-cloud-link tag-link-48 tag-link-position-32" style="font-size: 8pt;" aria-label="Sediments (1 item)">Sediments</a>
+<a href="https://mozajka.co/tag/semantic-data-integration/" class="tag-cloud-link tag-link-56 tag-link-position-33" style="font-size: 8pt;" aria-label="semantic data integration (1 item)">semantic data integration</a>
+<a href="https://mozajka.co/tag/services/" class="tag-cloud-link tag-link-11 tag-link-position-34" style="font-size: 13.7647058824pt;" aria-label="services (9 items)">services</a>
+<a href="https://mozajka.co/tag/solutions/" class="tag-cloud-link tag-link-22 tag-link-position-35" style="font-size: 15.9058823529pt;" aria-label="solutions (17 items)">solutions</a>
+<a href="https://mozajka.co/tag/water-resources-managemnet/" class="tag-cloud-link tag-link-55 tag-link-position-36" style="font-size: 8pt;" aria-label="Water resources managemnet (1 item)">Water resources managemnet</a></div>
+</section><section id="text-3" class="widget widget_text"><div class="widget-title">Need consultation?</div>			<div class="textwidget"><div role="form" class="wpcf7" id="wpcf7-f365-p532-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="/human-computer-interaction/#wpcf7-f365-p532-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="365" />
+<input type="hidden" name="_wpcf7_version" value="5.1.4" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f365-p532-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="532" />
+</div>
+<p><label> Need data as a service or a tailored business solution for you?<br><br />
+We have the capacity to catalyze your project, add scientific value to your research, speed up your innovations.<br><br />
+<label> Your Name *<br />
+    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label></p>
+<p><label> Your Email *<br />
+    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </label></p>
+<p><label> Your Telephone *<br />
+    <span class="wpcf7-form-control-wrap your-telephone"><input type="text" name="your-telephone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label></p>
+<p><label> Subject *<br />
+    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label></p>
+<p><label> Your Message *<br />
+    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea></span> </label></p>
+<p><div class="anr_captcha_field"><div id="anr_captcha_field_1" class="anr_captcha_field_div"></div></div><span class="wpcf7-form-control-wrap g-recaptcha-response"></span></p>
+<p><input type="submit" value="Get in touch" class="wpcf7-form-control wpcf7-submit" /></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
+</div>
+		</section>		</div>
+	</aside><!-- #sidebar -->
+
+
+			</div><!-- .wf-container -->
+		</div><!-- .wf-wrap -->
+
+	
+	</div><!-- #main -->
+
+	
+
+	
+	<!-- !Footer -->
+	<footer id="footer" class="footer solid-bg">
+
+		
+			<div class="wf-wrap">
+				<div class="wf-container-footer">
+					<div class="wf-container">
+						<section id="text-2" class="widget widget_text wf-cell wf-1-3">			<div class="textwidget"><p><img class=" wp-image-479" src="https://mozajka.co/wp-content/uploads/2019/08/Mozaika-Logo-Color-white-1-300x218.png" alt="Mozaika Logo Color white" width="136" height="99" /><br />
+&#8220;We leverage data science, natural interfaces and human insights to deliver solutions tailored to human behaviors, attitudes and comprehension. We build information infrastructures in different verticals and sell data or intelligence as a service.&#8221;</p>
+</div>
+		</section><section id="presscore-contact-info-widget-2" class="widget widget_presscore-contact-info-widget wf-cell wf-1-3"><div class="widget-title">Contact Us</div><ul class="contact-info"><li><span class="color-primary">Phone:</span><br />(00359) 885796530, (00359) 888186317</li><li><span class="color-primary">Address:</span><br />Solunska 52, Sofia 1000</li><li><span class="color-primary">We are open:</span><br />Mon - Fri: 9 AM - 7 PM</li></ul><div class="soc-ico"><p class="assistive-text">Find us on:</p><a title="Facebook" href="https://facebook.com/mozajkaCompany/" target="_blank" class="facebook"><span class="soc-font-icon"></span><span class="screen-reader-text">Facebook</span></a><a title="Twitter" href="#" target="_blank" class="twitter"><span class="soc-font-icon"></span><span class="screen-reader-text">Twitter</span></a><a title="YouTube" href="https://www.youtube.com/channel/UCVjyjaXpR1k8ryCdZM0gIeA" target="_blank" class="you-tube"><span class="soc-font-icon"></span><span class="screen-reader-text">YouTube</span></a><a title="Linkedin" href="https://www.linkedin.com/company/mozajka/" target="_blank" class="linkedin"><span class="soc-font-icon"></span><span class="screen-reader-text">Linkedin</span></a></div></section><section id="presscore-blog-posts-3" class="widget widget_presscore-blog-posts wf-cell wf-1-3"><div class="widget-title">News</div><ul class="recent-posts"><li><article class="post-format-standard"><div class="post-content"><a href="https://mozajka.co/mozaika-at-un-world-space-forum-2023/">Mozaika at UN World Space  Forum 2023</a><br /><time class="text-secondary" datetime="2023-12-15T13:57:54+03:00">December 15, 2023</time></div></article></li><li><article class="post-format-standard"><div class="post-content"><a href="https://mozajka.co/mozaika-participates-at-danube-ports-days-2023/">Mozaika participates in Danube Ports Days 2023</a><br /><time class="text-secondary" datetime="2023-11-26T13:26:39+03:00">November 26, 2023</time></div></article></li><li><article class="post-format-standard"><div class="post-content"><a href="https://mozajka.co/mozaika-t-2nd-destinatione-user-exchange/">Mozaika at the 2nd DestinationE User eXchange Seminar</a><br /><time class="text-secondary" datetime="2023-11-14T18:10:36+03:00">November 14, 2023</time></div></article></li></ul></section>					</div><!-- .wf-container -->
+				</div><!-- .wf-container-footer -->
+			</div><!-- .wf-wrap -->
+
+			
+<!-- !Bottom-bar -->
+<div id="bottom-bar" class="solid-bg logo-left" role="contentinfo">
+    <div class="wf-wrap">
+        <div class="wf-container-bottom">
+
+			
+                <div class="wf-float-left">
+
+					Mozaika © 2019-2023 All Rights Reserved
+                </div>
+
+			
+            <div class="wf-float-right">
+
+				
+            </div>
+
+        </div><!-- .wf-container-bottom -->
+    </div><!-- .wf-wrap -->
+</div><!-- #bottom-bar -->
+	</footer><!-- #footer -->
+
+
+	<a href="#" class="scroll-top"><span class="screen-reader-text">Go to Top</span></a>
+
+</div><!-- #page -->
+
+			<script type="text/javascript">
+				var anr_onloadCallback = function() {
+					for ( var i = 0; i < document.forms.length; i++ ) {
+						var form = document.forms[i];
+						var captcha_div = form.querySelector( '.anr_captcha_field_div' );
+
+						if ( null === captcha_div )
+							continue;
+						captcha_div.innerHTML = '';
+						( function( form ) {	
+							var anr_captcha = grecaptcha.render( captcha_div,{
+								'sitekey' : '6Le-CbMUAAAAAEm5kwaU6v39g138b2YPVMRSR6Cr',
+								'size'  : 'normal',
+								'theme' : 'light'
+							});
+							if ( typeof wc_checkout_params !== 'undefined' ) {
+								jQuery( document.body ).on( 'checkout_error', function(){
+									grecaptcha.reset(anr_captcha);
+								});
+							}
+							if ( typeof wpcf7 !== 'undefined' ) {
+								document.addEventListener( 'wpcf7submit', function() {
+									grecaptcha.reset(anr_captcha);
+								}, false );
+							}
+						})(form);
+					}
+				};
+			</script>
+						<script src="https://www.google.com/recaptcha/api.js?onload=anr_onloadCallback&#038;render=explicit"
+			async defer>
+			</script>
+			        <script type="text/javascript">
+            let cust_login = document.getElementById("loginform");
+            if(cust_login !== null) {
+                var recaptcha_script = document.createElement('script');
+                recaptcha_script.setAttribute('src','https://www.google.com/recaptcha/api.js');
+                document.head.appendChild(recaptcha_script);                
+            }
+        </script>
+        <script type='text/javascript' src='https://mozajka.co/wp-content/themes/dt-the7/js/main.min.js?ver=7.7.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/mozajka.co\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.4'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/dt-the7-core/assets/js/post-type.min.js?ver=7.7.1'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-includes/js/wp-embed.min.js?ver=5.2.19'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?ver=5.2.19'></script>
+<script type='text/javascript' src='https://mozajka.co/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.7'></script>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" title="Share"></button>
+				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div> 
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+			</button>
+			<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+			</button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+<!-- Dynamic page generated in 3.140 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2024-01-28 20:34:11 -->
+
+<!-- super cache -->
